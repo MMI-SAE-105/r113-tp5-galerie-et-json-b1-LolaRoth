@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <style>
         .overlay {
     /* Sit on top of the page content */
@@ -27,7 +28,7 @@
     /* Use a grid for easy centering */
     display: grid;
     /* Center vertically and horizontally */
-    align-items: center
+    place-content: center;
 }
 .overlay::after {
     /* Add content : "X" */
@@ -77,7 +78,7 @@
 }
     </style>
 </head>
-<body>
+<body >
     <h1>Galerie</h1>
 <p>lorem⇥</p>
 <div class="overlay">
