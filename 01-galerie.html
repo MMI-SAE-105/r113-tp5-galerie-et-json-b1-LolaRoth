@@ -78,13 +78,16 @@
 }
     </style>
 </head>
-<body x-data="{ChienPetit :Null}">
-        <figcaption>Un chiot</figcaption>
+<body x-data="{chienPetit : null
+}">
     
     <h1>Galerie</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit, labore explicabo iure dolor quo quis, quos eveniet, enim molestiae veniam nemo quibusdam dignissimos aperiam ex accusamus magni sint saepe.</p>
-<div class="overlay" x-show="ChienPetit" @click="ChienPetit=Null" @keyup.escape.window="ChienPetit = null">
-    <figure><img src="ChienPetit" alt="image 237... un chiot"></figure>
+<div class="overlay" x-show="chienPetit" @click="chienPetit=null" @keyup.escape.window="chienPetit = null">
+    <figure><img :src="chienPetit" alt="image 237... un chiot"></figure>
 </div>
+<img src="https://picsum.photos/id/236/40/60" alt="Miniature du chien Noir"
+@click ="chienPetit = 'https://picsum.photos/id/236/200/300'">
+<img src= alt="">
 </body>
 </html>
