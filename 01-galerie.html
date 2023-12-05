@@ -79,15 +79,13 @@
     </style>
 </head>
 <body x-data="{ChienPetit :'https://picsum.photos/id/237/400/300'}">
-    <figure>
-        <img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot">
+    <figure><img :src="imageaffichee" alt="image 237... un chiot"></figure>
+        <img :src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot">
         <figcaption>Un chiot</figcaption>
-        <div class="overlay">
-            
-        </div>
-    </figure>
+    
+    
     <h1>Galerie</h1>
-<p>lorem⇥</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sit, labore explicabo iure dolor quo quis, quos eveniet, enim molestiae veniam nemo quibusdam dignissimos aperiam ex accusamus magni sint saepe.</p>
 <div class="overlay" x-bind:="ChienPetit" @click="ChienPetit"=Null>
     <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
 </div>
