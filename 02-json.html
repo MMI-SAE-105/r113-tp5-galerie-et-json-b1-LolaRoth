@@ -26,6 +26,13 @@
             }
         ],
     }">
+        <template x-for="donnée in données">
+            <li>
+                <span x-text="donnée_nom">nom</span>
+                <a :href="donnée.url" x-text="donnée.projet">Projet
+                </a>
+            </li>
+        </template>
        
     </ul>
 </body>
