@@ -3,23 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Jason</title>
 </head>
 <body>
     <h1>JSON</h1>
     <ul x-data="{
         async données () {
-            const resp = await fetch('donnees.json');
+            const resp = await fetch('donnee.json');
             return await resp.json();
         },
     }">
-
-        <template x-for="donnée in données">
+        
+        <template x-for="donnee in donnee">
             <li>
-                <span x-text="donnée_nom">nom</span>
-                <a :href="donnée.url" x-text="donnée.projet">Projet
-
-                </a>
+                <span x-text="donnee_nom">nom</span>
+                <a :href="donnee.url" x-text="donnee.projet">Projet</a>
             </li>
         </template>
        
