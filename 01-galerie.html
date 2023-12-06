@@ -69,7 +69,7 @@
     /* 1rem padding */
     padding: 1rem;
     /* White border of 2px */
-    border: 2px solid white;
+    border: 2px solid rgb(200, 157, 240);
     border-radius: 15%;
 }
 
@@ -81,28 +81,42 @@
     border-radius: 15%;
 }
 
+body {
+    font-family: Roboto, sans-serif; /* Use a modern font */
+    margin: 5px; /* Remove default margin */
+    padding: 5px; /* Remove default padding */
+    background-color: #f4f4f4; /* Use a light background color */
+}
 .Titre{
     text-align: center;
     justify-content: center;
+    font-size: 2em;
+    color: black;
+    margin-bottom: 20px;
 
 }
-.Image{
+.Image img{
     /* Max width 100% for responsive image */
     max-width: 100%;
     /* Height auto for keeping the ratio */
     height: auto;
     cursor: pointer;
+    border-radius: 10px; /* Make the images slightly rounded */
+    box-shadow: 0 0 1px black; 
 }
 
 .Image{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Adjust as needed */
-    background-color: #aee6e6;
+    gap: 15px; /* Adjust as needed */
+    background-color: rgb(213, 190, 235);
     border-radius: 2%;
     padding: 5px;
+    
+   
 }
+
 .Retour{
     display: inline-block;
     background-color: rgb(200, 157, 240);
@@ -112,6 +126,8 @@
     text-decoration: none;
     margin-top: 10px;
     margin-left: 10px;
+    padding: 5px 20px;
+    margin-top: 10px;
 }
 
     </style>

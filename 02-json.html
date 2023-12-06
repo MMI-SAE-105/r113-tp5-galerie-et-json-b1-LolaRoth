@@ -16,11 +16,25 @@
     margin-top: 10px;
     margin-left: 10px;
 }
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: rgb(224, 208, 239);
+    border-radius: 10%;
+}
+.Titre{
+    text-align: center;
+    justify-content: center;
+}
     </style>
 </head>
 <body>
     <a class="Retour" href="/index.html">Retour à l'accueil</a>
-    <h1>JSON</h1>
+    <h1 class="Titre">JSON</h1>
     
     <ul x-data="{
         async donnees () {
