@@ -97,7 +97,11 @@
 .Image{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust as needed */
+    justify-content: center;
+    gap: 10px; /* Adjust as needed */
+    background-color: rgb(223, 193, 228);
+    border-radius: 2%;
+    padding: 5px;
 }
 .Retour{
     display: inline-block;
@@ -132,6 +136,12 @@
 
 <img class="Image"src="https://picsum.photos/id/110/100/120" alt="Miniature du paysage"
 @click ="chienPetit = 'https://picsum.photos/id/110/200/300'">
+
+<img class="Image"src="https://picsum.photos/id/124/100/120" alt="Miniature du paysage"
+@click ="chienPetit = 'https://picsum.photos/id/124/200/300'">
+
+<img class="Image"src="https://picsum.photos/id/176/100/120" alt="Miniature du paysage"
+@click ="chienPetit = 'https://picsum.photos/id/176/200/300'">
 </section>
 </body>
 </html>
