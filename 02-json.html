@@ -9,16 +9,16 @@
 <body>
     <h1>JSON</h1>
     <ul x-data="{
-        async données () {
+        async donnees () {
             const resp = await fetch('donnee.json');
             return await resp.json();
         },
     }">
         
-        <template x-for="donnee in donnee.json">
+        <template x-for="obj in donnees">
             <li>
-                <span x-text="donnee_nom">nom</span>
-                <a :href="donnee.url" x-text="donnee.projet">Projet</a>
+                <span x-text="obj.nom">nom</span>
+                <a :href="obj.url" x-text="obj.projet">Projet</a>
             </li>
         </template>
        
