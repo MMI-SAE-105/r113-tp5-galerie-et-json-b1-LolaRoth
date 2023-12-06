@@ -15,7 +15,7 @@
         },
     }">
         
-        <template x-for="donnee in donnee">
+        <template x-for="donnee in donnee.json">
             <li>
                 <span x-text="donnee_nom">nom</span>
                 <a :href="donnee.url" x-text="donnee.projet">Projet</a>

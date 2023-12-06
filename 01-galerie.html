@@ -30,6 +30,7 @@
     display: grid;
     /* Center vertically and horizontally */
     place-content: center;
+    
 }
 .overlay::after {
     /* Add content : "X" */
@@ -69,6 +70,7 @@
     padding: 1rem;
     /* White border of 2px */
     border: 2px solid white;
+    border-radius: 15%;
 }
 
 .overlay>figure>img {
@@ -76,6 +78,7 @@
     max-width: 100%;
     /* Height auto for keeping the ratio */
     height: auto;
+    border-radius: 15%;
 }
 
 .Titre{
@@ -96,6 +99,8 @@
     flex-wrap: wrap;
     gap: 20px; /* Adjust as needed */
 }
+
+
     </style>
 </head>
 <body x-data="{chienPetit : null
