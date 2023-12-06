@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <title>Jason</title>
+    <style>
+        .Retour{
+    display: inline-block;
+    background-color: rgb(200, 157, 240);
+    border-radius: 5px;
+    list-style-type: none;
+    color: black ;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+    </style>
 </head>
 <body>
+    <a class="Retour" href="/index.html">Retour à l'accueil</a>
     <h1>JSON</h1>
+    
     <ul x-data="{
         async donnees () {
             const resp = await fetch('donnee.json');
